@@ -81,11 +81,19 @@ project(":ios") {
 
     dependencies {
         implementation project(":core")
-        api "com.mobidevelop.robovm:robovm-rt:$roboVMVersion"
-        api "com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion"
-        api "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
-        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+        implementation "com.mobidevelop.robovm:robovm-rt:$roboVMVersion"
+        implementation "com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion"
+        implementation "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+        implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-ios"
 
+    }
+
+    robovm {
+        iosSignIdentity = "Apple Development: Vidhyasagar Mahadevan Harihara (T97GF7R76M)"
+        iosProvisioningProfile = "SpaceJunk AppStore Provisioning Profile"
+        iosSkipSigning = false
+        archs = "thumbv7:arm64"
     }
 }
 
