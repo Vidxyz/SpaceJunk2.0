@@ -90,7 +90,7 @@ project(":ios") {
     }
 
     robovm {
-        iosSignIdentity = "Apple Development: Vidhyasagar Mahadevan Harihara (T97GF7R76M)"
+        iosSignIdentity = "iPhone Distribution: Vidhyasagar Mahadevan Harihara (7MN3832X22)"
         iosProvisioningProfile = "SpaceJunk AppStore Provisioning Profile"
         iosSkipSigning = false
         archs = "thumbv7:arm64"
