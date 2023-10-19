@@ -27,7 +27,7 @@ android {
         applicationId "com.spacejunk.game"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 6
+        versionCode 7
         versionName "1.3"
     }
 
